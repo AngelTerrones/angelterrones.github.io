@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Bellatrix | A RV32I RISC-V soft processor using nMigen</title>
+    <meta name="Bellatrix | A RV32I RISC-V soft processor using nMigen" content="">
+    <meta name="Ángel Terrones" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="icons8-curly-brackets-48.png" type="image/x-icon">
+    <link rel="icon" href="icons8-curly-brackets-48.png" type="image/x-icon">
+
+</head>
+
+<body id="top">
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="dots-fade">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header header">
+
+        <!-- <div class="header__logo">
+            <a class="logo" href="index.html">
+                <img src="images/logo.svg" alt="Homepage">
+            </a>
+        </div>  -->
+        <!-- end header__logo -->
+
+        <a class="header__toggle-menu" href="#0" title="Menu"><span>Menu</span></a>
+        <nav class="header__nav-wrap">
+
+            <h2 class="header__nav-heading h6">Navigate to</h2>
+
+            <ul class="header__nav">
+              <li class="current"><a href="index.html" title="">Home</a></li>
+
+              <li class="has-children">
+                  <a href="#0" title="">RISC-V</a>
+                  <ul class="sub-menu">
+                      <li class="has-children"><a href="bellatrix.html">Bellatrix</a></li>
+                      <li class="has-children"><a href="altair.html">Altair</a></li>
+                      <li class="has-children"><a href="algol.html">Algol</a></li>
+                      <li class="has-children"><a href="gareplicatingimage.html">GA for replicating an image, using CUDA</a></li>
+                  </ul>
+              </li>
+            </ul> <!-- end header__nav -->
+
+            <a href="#0" title="Close Menu" class="header__overlay-close close-mobile-menu">Close</a>
+
+        </nav> <!-- end header__nav-wrap -->
+
+    </header> <!-- s-header -->
+
+
+    <!-- s-content
+    ================================================== -->
+    <section class="s-content s-content--top-padding s-content--narrow">
+
+        <article class="row entry format-standard">
+
+            <div class="entry__media col-full">
+                <div class="entry__post-thumb">
+                    <img src="images/riscv-logo-2.png" alt="">
+                </div>
+            </div>
+
+            <div class="entry__header col-full">
+                <h1 class="entry__header-title display-1">
+                    Bellatrix | A RV32I RISC-V soft processor using nMigen
+                </h1>
+                <ul class="entry__header-meta">
+                    <li class="date">August, 2020</li>
+                    <li class="byline">
+                        By
+                        <a href="#0">Ángel Terrones</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="entry__header col-full">
+                <ul class="entry__header-meta">
+                  <li class="byline">
+                    <h3><a href="https://github.com/AngelTerrones/Bellatrix"><i class="fab fa-github"></i></a></h3>
+                  </li>
+                </ul>
+            </div>
+
+            <div class="col-full entry__main">
+
+                <p class="lead drop-cap">Bellatrix is a CPU core that implements the <a href="https://riscv.org/specifications/">RISC-V RV32I Instruction Set</a>. It is based on the <a href="https://github.com/lambdaconcept/minerva">Minerva</a> CPU.</p>
+
+                <p>Bellatrix is free and open hardware licensed under the permissive two-clause BSD license. See LICENSE file for full copyright and license information.</p>
+
+                <h2 id="cpu-core-details">CPU core details</h2>
+
+                <ul>
+                    <li>RISC-V RV32I[M] ISA.</li>
+                    <li>Single-issue, in-order, six-stage pipeline datapath.</li>
+                    <li>Separate instruction and data ports.</li>
+                    <li>Optional branch predictor.</li>
+                    <li>Optional instruction and data caches. The data cache is couple with a write buffer.</li>
+                    <li>Optional multiplier and divider, for the RV32M ISA.</li>
+                    <li>No MMU.</li>
+                    <li>No FPU. Software-base floating point support (toolchain).</li>
+                    <li>Support for Machine and User (optional) <a href="https://riscv.org/specifications/privileged-isa/">privilege modes</a>, version v1.11.</li>
+                    <li>Support for external interrupts, as described in the <a href="https://riscv.org/specifications/privileged-isa/">privilege mode manual</a>.</li>
+                    <li>Support for hardware triggers, as described in the <a href="https://riscv.org/specifications/debug-specification/">debug specification</a></li>
+                    <li><a href="https://www.ohwr.org/attachments/179/wbspec_b4.pdf">Wishbone B4</a>[][4] Bus Interface, in classic standard mode.</li>
+                </ul>
+
+
+                <div class="entry__taxonomies">
+                    <div class="entry__cat">
+                        <h5>Posted In: </h5>
+                        <span class="entry__tax-list">
+                            <a href="#0">RISC-V</a>
+                        </span>
+                    </div> <!-- end entry__cat -->
+
+                    <div class="entry__tags">
+                        <h5>Tags: </h5>
+                        <span class="entry__tax-list entry__tax-list--pill">
+                            <a href="#0">RISC-V</a>
+                        </span>
+                    </div> <!-- end entry__tags -->
+                </div> <!-- end s-content__taxonomies -->
+
+                <div class="entry__author">
+                    <img src="images/photo.jpg" alt="">
+
+                    <div class="entry__author-about">
+                        <h5 class="entry__author-name">
+                            <span>Posted by</span>
+                            <a href="#0">Ángel Terrones</a>
+                        </h5>
+
+                        <div class="entry__author-desc">
+                            <p>
+                            Assistant Professor at Universidad Simón Bolívar
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div> <!-- s-entry__main -->
+
+        </article> <!-- end entry/article -->
+
+
+        <div class="s-content__entry-nav">
+            <div class="row s-content__nav">
+                <div class="col-six s-content__prev">
+                    <a href="altair.html" rel="prev">
+                        <span>Previous Post</span>
+                        Altair | A RV32I RISC-V soft processor using nMigen
+                    </a>
+                </div>
+                <!-- <div class="col-six s-content__next">
+                    <a href="3dmap.html" rel="next">
+                        <span>Next Post</span>
+                        Real-Time Monitoring on a 3D Printed Map
+                    </a>
+                </div> -->
+            </div>
+        </div> <!-- end s-content__pagenav -->
+
+    </section> <!-- end s-content -->
+
+    <!-- s-footer
+    ================================================== -->
+    <footer class="s-footer">
+
+        <div class="s-footer__main">
+            <div class="row">
+              <div class="col-six tab-full s-footer__about">
+
+                  <h4>Ángel Terrones</h4>
+
+                  <p>Assistant Professor at Universidad Simón Bolívar.</p>
+              </div>
+              <div class="col-six tab-full s-footer__about">
+
+                  <p>Electronics Engineer with proficiency in electronics and mechatronics systems. Comprehensive understanding of digital circuits. Experience in designing and constructing customized equipment and automation solutions, data acquisition systems, and programming firmware and end-user interfaces. Expertise leading, supervising and evaluating groups of persons. Master in Electronic Engineering option Mechatronics.</p>
+
+
+              </div>
+            </div>
+        </div> <!-- end s-footer__main -->
+
+        <div class="s-footer__bottom">
+            <div class="row">
+
+                <div class="col-six">
+                    <ul class="footer-social">
+                        <li>
+                            <a href="https://www.linkedin.com/in/%C3%A1ngel-terrones-347996a7/"><i class="fab fa-linkedin"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/AngelTerrones"><i class="fab fa-github"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-six">
+                    <div class="s-footer__copyright">
+                        <span><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+</span>
+                    </div>
+                </div>
+
+            </div>
+        </div> <!-- end s-footer__bottom -->
+
+        <div class="go-top">
+            <a class="smoothscroll" title="Back to Top" href="#top"></a>
+        </div>
+
+    </footer> <!-- end s-footer -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
